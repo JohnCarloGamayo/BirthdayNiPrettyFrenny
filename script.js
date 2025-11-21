@@ -273,7 +273,6 @@ function displayModalContent() {
     const item = galleryItems[currentGalleryIndex];
     const type = item.getAttribute('data-type');
     const src = item.getAttribute('data-src');
-    const caption = item.querySelector('.gallery-caption').textContent;
     
     const modalImage = document.getElementById('modalImage');
     const modalVideo = document.getElementById('modalVideo');
@@ -294,7 +293,8 @@ function displayModalContent() {
         modalVideo.play();
     }
     
-    modalCaption.textContent = caption;
+    // Hide caption
+    modalCaption.textContent = '';
 }
 
 // ===================================

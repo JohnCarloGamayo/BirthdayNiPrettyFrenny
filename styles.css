@@ -860,15 +860,6 @@ body {
     right: 40px;
 }
 
-.modal-caption {
-    color: var(--white);
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    font-weight: 600;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-
 @media (max-width: 768px) {
     .modal-close {
         top: 10px;
@@ -890,10 +881,5 @@ body {
 
     .modal-next {
         right: 10px;
-    }
-
-    .modal-caption {
-        font-size: 1.2rem;
-        padding: 0 20px;
     }
 }
