@@ -669,25 +669,6 @@ body {
     50% { transform: translateY(-20px); }
 }
 
-.download-btn {
-    padding: 18px 40px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--white);
-    background: linear-gradient(135deg, var(--purple-primary), var(--purple-dark));
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    animation: fadeInUp 1s ease-out 0.9s backwards;
-    box-shadow: 0 10px 40px rgba(165, 108, 255, 0.3);
-}
-
-.download-btn:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 15px 60px rgba(165, 108, 255, 0.5);
-}
-
 /* ===================================
    RESPONSIVE DESIGN
    =================================== */

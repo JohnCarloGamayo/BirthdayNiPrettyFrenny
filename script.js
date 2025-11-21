@@ -340,53 +340,6 @@ function createFireworks() {
 }
 
 // ===================================
-// DOWNLOAD BUTTON
-// ===================================
-document.getElementById('downloadBtn').addEventListener('click', () => {
-    // Create a beautiful birthday letter content
-    const letterContent = `
-Dear Friend,
-
-As I sit here thinking about all the memories we've shared, I can't help but smile. You've been a source of joy, inspiration, and comfort through every season of life.
-
-Your birthday isn't just a celebration of another year—it's a celebration of YOU. The way you care for others, your infectious laugh, your unwavering support, and the light you bring into this world.
-
-I hope this year brings you everything your heart desires and more. May your dreams take flight, may love surround you always, and may you never forget how truly special you are.
-
-Happy Birthday! Here's to you and all the beautiful moments yet to come. 💜
-
-With love and warm wishes,
-Your Friend
-    `;
-    
-    // Create blob and download
-    const blob = new Blob([letterContent], { type: 'text/plain' });
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Birthday-Letter.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    window.URL.revokeObjectURL(url);
-    
-    // Show confirmation
-    showDownloadConfirmation();
-});
-
-function showDownloadConfirmation() {
-    const btn = document.getElementById('downloadBtn');
-    const originalText = btn.innerHTML;
-    btn.innerHTML = '<span>✓ Downloaded!</span>';
-    btn.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
-    
-    setTimeout(() => {
-        btn.innerHTML = originalText;
-        btn.style.background = 'linear-gradient(135deg, var(--purple-primary), var(--purple-dark))';
-    }, 2000);
-}
-
-// ===================================
 // SMOOTH SCROLLING FOR LINKS
 // ===================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
