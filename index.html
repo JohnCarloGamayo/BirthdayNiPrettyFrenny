@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="musicToggle">
+        <span class="music-icon">🎵</span>
+    </button>
+
+    <!-- Floating Particles -->
+    <div class="particles-container" id="particlesContainer"></div>
+
+    <!-- Landing Page / Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-content">
+            <div class="confetti-container" id="confettiContainer"></div>
+            <h1 class="hero-title">
+                <span class="sparkle">✨</span>
+                Happy Birthday!
+                <span class="sparkle">✨</span>
+            </h1>
+            <h2 class="hero-subtitle">Frenny</h2>
+            <button class="enter-btn" id="enterBtn">
+                <span>Enter Surprise</span>
+                <div class="btn-glow"></div>
+            </button>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </section>
+
+    <!-- Main Content (Hidden Initially) -->
+    <div class="main-content" id="mainContent">
+        
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-card">
+                    <div class="photo-container">
+                        <div class="photo-frame">
+                            <img src="image1.jpeg" alt="Birthday Celebrant" class="celebrant-photo">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h2 class="section-title">About Frenny</h2>
+                        <p class="about-description">
+                            An amazing person I met through TikTok, who has become a true friend. From our first conversation 
+                            to now, you've been consistent, caring, and genuine. We may not have met in person yet, but we've 
+                            shared so much together—Bible devotions, random thoughts, silly moments, and even our struggles.
+                        </p>
+                        <p class="about-description">
+                            You're an incredibly hardworking daughter, a respectful and kind ate, brilliant in your own way, 
+                            deeply devoted to God, and absolutely beautiful inside and out. May God bless you abundantly, Frenny! 🎂💜
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Birthday Letter Section -->
+        <section class="letter-section" id="letter">
+            <div class="container">
+                <div class="letter-card">
+                    <h2 class="section-title letter-title">A Special Message</h2>
+                    <div class="letter-content" id="letterContent">
+                        <p class="letter-text">
+                            Dear Frenny,
+                        </p>
+                        <p class="letter-text">
+                            Who would've thought that a simple connection on TikTok would lead to such a meaningful friendship? 
+                            From the very start, our conversations have been consistent, genuine, and filled with so much heart.
+                        </p>
+                        <p class="letter-text">
+                            Through Bible devotions, random thoughts, shared kabuangan, and even life's challenges—we've been 
+                            there for each other. Distance doesn't matter when hearts are connected. We may not be together 
+                            physically, but we've shared happiness and supported each other through sadness.
+                        </p>
+                        <p class="letter-text">
+                            You are one incredibly special person—a hardworking anak, deeply respectful, a caring ate, 
+                            intelligent, God-fearing, and absolutely beautiful. Your faith, kindness, and dedication inspire me.
+                        </p>
+                        <p class="letter-text">
+                            On your special day, I pray that God blesses you abundantly in every area of your life. 
+                            May all your dreams come true, and I hope that soon, we'll finally get to bond in person! 
+                            Happy Birthday, Frenny! 💜
+                        </p>
+                        <p class="letter-signature">
+                            With love and warm wishes,<br>
+                            <span class="signature-name">Your Friend</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <h2 class="section-title">Precious Moments</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-type="image" data-src="image2.jfif">
+                        <img src="image2.jfif" alt="Memory 1">
+                        <div class="gallery-caption" style="display:none;">Beautiful Memories</div>
+                    </div>
+                    <div class="gallery-item" data-type="video" data-src="Video1.mp4">
+                        <video src="Video1.mp4" muted></video>
+                        <div class="gallery-caption" style="display:none;">Happy Times</div>
+                    </div>
+                    <div class="gallery-item" data-type="image" data-src="image3.png">
+                        <img src="image3.png" alt="Memory 3">
+                        <div class="gallery-caption" style="display:none;">Special Moments</div>
+                    </div>
+                    <div class="gallery-item" data-type="video" data-src="Video2.mp4">
+                        <video src="Video2.mp4" muted></video>
+                        <div class="gallery-caption" style="display:none;">Cherished Days</div>
+                    </div>
+                    <div class="gallery-item" data-type="image" data-src="image4.png">
+                        <img src="image4.png" alt="Memory 5">
+                        <div class="gallery-caption" style="display:none;">Unforgettable</div>
+                    </div>
+                    <div class="gallery-item" data-type="video" data-src="Video3.mp4">
+                        <video src="Video3.mp4" muted></video>
+                        <div class="gallery-caption" style="display:none;">Forever Friends</div>
+                    </div>
+                    <div class="gallery-item" data-type="image" data-src="image5.jfif">
+                        <img src="image5.jfif" alt="Memory 7">
+                        <div class="gallery-caption" style="display:none;">Sweet Memories</div>
+                    </div>
+                    <div class="gallery-item" data-type="video" data-src="Messenger_creation_0D85675B-BD07-4B3D-95CE-4D4C2061E4ED.mp4">
+                        <video src="Messenger_creation_0D85675B-BD07-4B3D-95CE-4D4C2061E4ED.mp4" muted></video>
+                        <div class="gallery-caption" style="display:none;">Amazing Moments</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Surprise Section -->
+        <section class="surprise-section" id="surprise">
+            <div class="fireworks-container" id="fireworksContainer"></div>
+            <div class="surprise-content">
+                <h1 class="surprise-title">
+                    🎊 Make A Wish! 🎊
+                </h1>
+                <p class="surprise-message">
+                    May all your dreams come true this year!
+                </p>
+                <div class="cake-animation">
+                    <div class="cake">🎂</div>
+                </div>
+                <button class="download-btn" id="downloadBtn">
+                    <span>Download Birthday Letter</span>
+                </button>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop>
+        <source src="birthday-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Modal for Gallery -->
+    <div class="modal" id="galleryModal">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <button class="modal-nav modal-prev" id="modalPrev">&#10094;</button>
+        <button class="modal-nav modal-next" id="modalNext">&#10095;</button>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <video id="modalVideo" controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
